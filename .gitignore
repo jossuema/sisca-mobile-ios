@@ -1,0 +1,15 @@
+# Secretos (contiene API_PHKEY) — NO versionar
+SISCAMobile/Config.plist
+
+# Xcode / build
+build/
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+xcuserdata/
+*.xcuserstate
+.DS_Store
+
+# CocoaPods (no se usa por ahora, pero por si acaso)
+Pods/

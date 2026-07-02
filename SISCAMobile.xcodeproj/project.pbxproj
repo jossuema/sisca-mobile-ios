@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BBFB736F9C1908094F9E950 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E21CE7EA601DDD1AA13B7F0 /* RootView.swift */; };
+		1C7E7F2D989949A7877C48E4 /* SISCAMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2519C4FDCB76B36A296941DD /* SISCAMobileApp.swift */; };
+		2389961CC21E37FFF0DD03E9 /* AccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817496F0DD5EFDEB70B51B7 /* AccessView.swift */; };
+		2BEE9A0A003A047E8F29E423 /* BiometricAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92124FCA2375F81799A889DD /* BiometricAuth.swift */; };
+		352BE8A1B77935C72247735B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DD477D2797E7F6D9075EDD /* Assets.xcassets */; };
+		37F940DD0A884A558F5EA825 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C0F1C87830939926CC360 /* UserStore.swift */; };
+		39CE8FF33279E046DF620C35 /* AccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEF33C3DF1445ECB3549BA9 /* AccessViewModel.swift */; };
+		54E405A0CAE5A3A009765198 /* SignalSendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3162DFA0417D1071A8A16 /* SignalSendingView.swift */; };
+		5E67A1D9C4B38FFE2134E591 /* DecodingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111FA14CEFC4A36F31E63ABE /* DecodingHelpers.swift */; };
+		6350B3CB527FC3E7E6D13289 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389512C37388F711FA4E2F25 /* AuthViewModel.swift */; };
+		6E683E31543179A37C96D042 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9F9FDC73FB93A9D45EDEB /* SessionStore.swift */; };
+		940AA72D34E602DB4FB81B38 /* SignalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155E20F65BBD5D1241F3623 /* SignalViewModel.swift */; };
+		A4AE67164C5E97F99798CD7A /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104C8644D84231E141A5D6F /* Footer.swift */; };
+		A596024DC41E4EB2075518CE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C4F58544251FF8DD79174 /* LoginView.swift */; };
+		A77EE5ABC3332C8218E500E0 /* DoorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768000162D79E98821072B97 /* DoorsView.swift */; };
+		B0ADDAF1C3F2FE9C38AAA903 /* ApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E38BF6C1C3B27114CC176F /* ApiModels.swift */; };
+		BBE39A14C1D9B82C7CD8E9B4 /* ClassroomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649887A9DF46E13ABD61F6BF /* ClassroomViewModel.swift */; };
+		BDCFABFDC6337DD72654A7D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C77FA9DD8ED2205C07A4E3 /* Foundation.framework */; };
+		C001AEF380D11D521BDDF6E3 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A32451F8C27FC6AD253A8 /* MainNavigation.swift */; };
+		C465AEE2DFD552CC6820F2FE /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416EF1695EAEBE1AC1D24276 /* MD5.swift */; };
+		CB585C4DC5DFAE21F65B245C /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431E622EE47F96CF8643632E /* BluetoothManager.swift */; };
+		D4E4C7A3678497F02DA72B21 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12431F66ADF051B91C70BC2 /* APIClient.swift */; };
+		D8810789BD5BC8D05EBC0FE1 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 887F63ECFEF4721F4ACB4006 /* Config.plist */; };
+		EDEF465709657373110E69E3 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBED6A02E932ED867491944 /* AppConfig.swift */; };
+		F2FDF82D3230809AF7E3E489 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9754F3A8A07F7C714E658 /* Color+Hex.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0155E20F65BBD5D1241F3623 /* SignalViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignalViewModel.swift; sourceTree = "<group>"; };
+		04DD477D2797E7F6D9075EDD /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08C77FA9DD8ED2205C07A4E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0AB9F9FDC73FB93A9D45EDEB /* SessionStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		0D9A32451F8C27FC6AD253A8 /* MainNavigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		111FA14CEFC4A36F31E63ABE /* DecodingHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DecodingHelpers.swift; sourceTree = "<group>"; };
+		1817496F0DD5EFDEB70B51B7 /* AccessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccessView.swift; sourceTree = "<group>"; };
+		1E21CE7EA601DDD1AA13B7F0 /* RootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		2519C4FDCB76B36A296941DD /* SISCAMobileApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SISCAMobileApp.swift; sourceTree = "<group>"; };
+		389512C37388F711FA4E2F25 /* AuthViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		3A4847E675A5964E9B104093 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416EF1695EAEBE1AC1D24276 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		431E622EE47F96CF8643632E /* BluetoothManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		649887A9DF46E13ABD61F6BF /* ClassroomViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClassroomViewModel.swift; sourceTree = "<group>"; };
+		67C3162DFA0417D1071A8A16 /* SignalSendingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignalSendingView.swift; sourceTree = "<group>"; };
+		768000162D79E98821072B97 /* DoorsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DoorsView.swift; sourceTree = "<group>"; };
+		887F63ECFEF4721F4ACB4006 /* Config.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		8DBED6A02E932ED867491944 /* AppConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		92124FCA2375F81799A889DD /* BiometricAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BiometricAuth.swift; sourceTree = "<group>"; };
+		A8A9754F3A8A07F7C714E658 /* Color+Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		AAEF33C3DF1445ECB3549BA9 /* AccessViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccessViewModel.swift; sourceTree = "<group>"; };
+		B6E38BF6C1C3B27114CC176F /* ApiModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApiModels.swift; sourceTree = "<group>"; };
+		D02C4F58544251FF8DD79174 /* LoginView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D52C0F1C87830939926CC360 /* UserStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		D976DA36E4436BD7D7A6247E /* SISCAMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SISCAMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E104C8644D84231E141A5D6F /* Footer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
+		F12431F66ADF051B91C70BC2 /* APIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FC371EC2F82E199371C3C5CF /* Config.plist.example */ = {isa = PBXFileReference; includeInIndex = 1; path = Config.plist.example; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF62C7FC2B9DFA5B893256E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDCFABFDC6337DD72654A7D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D75D88DA78863534844247E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				92124FCA2375F81799A889DD /* BiometricAuth.swift */,
+			);
+			name = Auth;
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0FE506EC328FB83CAB6D1325 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F12431F66ADF051B91C70BC2 /* APIClient.swift */,
+			);
+			name = Networking;
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		19086BE4996DA44F79FB5B31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				873390567C14E328953344B0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C9F1986B58F95EF733799B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1817496F0DD5EFDEB70B51B7 /* AccessView.swift */,
+				6D158DE69B314B3793241F62 /* Components */,
+				768000162D79E98821072B97 /* DoorsView.swift */,
+				D02C4F58544251FF8DD79174 /* LoginView.swift */,
+				0D9A32451F8C27FC6AD253A8 /* MainNavigation.swift */,
+				1E21CE7EA601DDD1AA13B7F0 /* RootView.swift */,
+				67C3162DFA0417D1071A8A16 /* SignalSendingView.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D7D4F3674AC987CD4CCF93D /* SISCAMobile */ = {
+			isa = PBXGroup;
+			children = (
+				89D0F6686702E5A006958BF7 /* App */,
+				04DD477D2797E7F6D9075EDD /* Assets.xcassets */,
+				0D75D88DA78863534844247E /* Auth */,
+				6CEA76C2AD02190670DACFAD /* Bluetooth */,
+				887F63ECFEF4721F4ACB4006 /* Config.plist */,
+				FC371EC2F82E199371C3C5CF /* Config.plist.example */,
+				3A4847E675A5964E9B104093 /* Info.plist */,
+				B3BEF3B5D1025EAE70A62EAF /* Models */,
+				0FE506EC328FB83CAB6D1325 /* Networking */,
+				D6A8FACA4E41133B2AD319B5 /* Persistence */,
+				E3989984E96FC619F0984414 /* Theme */,
+				FC7123B5DE9F96B829796017 /* Utils */,
+				E8CEC143D2DAF2749B0A52A1 /* ViewModels */,
+				2C9F1986B58F95EF733799B1 /* Views */,
+			);
+			name = SISCAMobile;
+			path = SISCAMobile;
+			sourceTree = "<group>";
+		};
+		5DC302094C71A5C5F45552EA = {
+			isa = PBXGroup;
+			children = (
+				DA8DB8E707A1EF1E8334D420 /* Products */,
+				19086BE4996DA44F79FB5B31 /* Frameworks */,
+				3D7D4F3674AC987CD4CCF93D /* SISCAMobile */,
+			);
+			sourceTree = "<group>";
+		};
+		6CEA76C2AD02190670DACFAD /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				431E622EE47F96CF8643632E /* BluetoothManager.swift */,
+			);
+			name = Bluetooth;
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		6D158DE69B314B3793241F62 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E104C8644D84231E141A5D6F /* Footer.swift */,
+			);
+			name = Components;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		873390567C14E328953344B0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				08C77FA9DD8ED2205C07A4E3 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		89D0F6686702E5A006958BF7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8DBED6A02E932ED867491944 /* AppConfig.swift */,
+				2519C4FDCB76B36A296941DD /* SISCAMobileApp.swift */,
+				0AB9F9FDC73FB93A9D45EDEB /* SessionStore.swift */,
+			);
+			name = App;
+			path = App;
+			sourceTree = "<group>";
+		};
+		B3BEF3B5D1025EAE70A62EAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6E38BF6C1C3B27114CC176F /* ApiModels.swift */,
+				111FA14CEFC4A36F31E63ABE /* DecodingHelpers.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6A8FACA4E41133B2AD319B5 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				D52C0F1C87830939926CC360 /* UserStore.swift */,
+			);
+			name = Persistence;
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		DA8DB8E707A1EF1E8334D420 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D976DA36E4436BD7D7A6247E /* SISCAMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3989984E96FC619F0984414 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A8A9754F3A8A07F7C714E658 /* Color+Hex.swift */,
+			);
+			name = Theme;
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		E8CEC143D2DAF2749B0A52A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF33C3DF1445ECB3549BA9 /* AccessViewModel.swift */,
+				389512C37388F711FA4E2F25 /* AuthViewModel.swift */,
+				649887A9DF46E13ABD61F6BF /* ClassroomViewModel.swift */,
+				0155E20F65BBD5D1241F3623 /* SignalViewModel.swift */,
+			);
+			name = ViewModels;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FC7123B5DE9F96B829796017 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				416EF1695EAEBE1AC1D24276 /* MD5.swift */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96D959E4A23B0804CB6688FA /* SISCAMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEFF93A577C2FBB6C5FE6ACB /* Build configuration list for PBXNativeTarget "SISCAMobile" */;
+			buildPhases = (
+				3E77A3B1A49C8882FF314555 /* Sources */,
+				BF62C7FC2B9DFA5B893256E4 /* Frameworks */,
+				BDA0EF4275BFCF430311F441 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SISCAMobile;
+			productName = SISCAMobile;
+			productReference = D976DA36E4436BD7D7A6247E /* SISCAMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E97550CC33831C2896482DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 2347EDF3A48C21CBECC19602 /* Build configuration list for PBXProject "SISCAMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DC302094C71A5C5F45552EA;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DA8DB8E707A1EF1E8334D420 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96D959E4A23B0804CB6688FA /* SISCAMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDA0EF4275BFCF430311F441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352BE8A1B77935C72247735B /* Assets.xcassets in Resources */,
+				D8810789BD5BC8D05EBC0FE1 /* Config.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E77A3B1A49C8882FF314555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEF465709657373110E69E3 /* AppConfig.swift in Sources */,
+				1C7E7F2D989949A7877C48E4 /* SISCAMobileApp.swift in Sources */,
+				6E683E31543179A37C96D042 /* SessionStore.swift in Sources */,
+				2BEE9A0A003A047E8F29E423 /* BiometricAuth.swift in Sources */,
+				CB585C4DC5DFAE21F65B245C /* BluetoothManager.swift in Sources */,
+				B0ADDAF1C3F2FE9C38AAA903 /* ApiModels.swift in Sources */,
+				5E67A1D9C4B38FFE2134E591 /* DecodingHelpers.swift in Sources */,
+				D4E4C7A3678497F02DA72B21 /* APIClient.swift in Sources */,
+				37F940DD0A884A558F5EA825 /* UserStore.swift in Sources */,
+				F2FDF82D3230809AF7E3E489 /* Color+Hex.swift in Sources */,
+				C465AEE2DFD552CC6820F2FE /* MD5.swift in Sources */,
+				39CE8FF33279E046DF620C35 /* AccessViewModel.swift in Sources */,
+				6350B3CB527FC3E7E6D13289 /* AuthViewModel.swift in Sources */,
+				BBE39A14C1D9B82C7CD8E9B4 /* ClassroomViewModel.swift in Sources */,
+				940AA72D34E602DB4FB81B38 /* SignalViewModel.swift in Sources */,
+				2389961CC21E37FFF0DD03E9 /* AccessView.swift in Sources */,
+				A4AE67164C5E97F99798CD7A /* Footer.swift in Sources */,
+				A77EE5ABC3332C8218E500E0 /* DoorsView.swift in Sources */,
+				A596024DC41E4EB2075518CE /* LoginView.swift in Sources */,
+				C001AEF380D11D521BDDF6E3 /* MainNavigation.swift in Sources */,
+				1BBFB736F9C1908094F9E950 /* RootView.swift in Sources */,
+				54E405A0CAE5A3A009765198 /* SignalSendingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		629889DE8D7A8ACED47FB34E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A93FED4B2291EB22AA1526E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SISCAMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.siscamobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BEF05C29017A60107D7775DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FA490CD2358DD9E4AA51C990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SISCAMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.siscamobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2347EDF3A48C21CBECC19602 /* Build configuration list for PBXProject "SISCAMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629889DE8D7A8ACED47FB34E /* Debug */,
+				BEF05C29017A60107D7775DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEFF93A577C2FBB6C5FE6ACB /* Build configuration list for PBXNativeTarget "SISCAMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA490CD2358DD9E4AA51C990 /* Release */,
+				6A93FED4B2291EB22AA1526E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E97550CC33831C2896482DD /* Project object */;
+}

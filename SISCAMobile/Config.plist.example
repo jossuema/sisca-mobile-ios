@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Copia este archivo a Config.plist y completa API_PHKEY. -->
+	<!-- Config.plist está en .gitignore: NO subas la llave al repo. -->
+
+	<!-- Base URL del backend. DEBE terminar en "/". -->
+	<key>API_URL</key>
+	<string>https://www.utmachala.edu.ec/querys/</string>
+
+	<!-- Llave de API (pkey) que exige el backend PHP. Cópiala del local.properties de Android. -->
+	<key>API_PHKEY</key>
+	<string>PON_AQUI_TU_API_PHKEY</string>
+</dict>
+</plist>
